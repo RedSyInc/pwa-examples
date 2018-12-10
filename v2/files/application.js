@@ -29,19 +29,24 @@
     function showAddToHomeScreen() {
 
         var a2hsBtn = document.querySelector(".button1");
+        var a2hsBtn2 = document.querySelector(".button2");
 
         a2hsBtn.style.display = "flex";
+        a2hsBtn2.style.display = "flex";
 
         a2hsBtn.addEventListener("click", addToHomeScreen);
+        a2hsBtn2.addEventListener("click", addToHomeScreen);
 
     }
 
     function addToHomeScreen() {
 
         var a2hsBtn = document.querySelector(".button1");
+        var a2hsBtn2 = document.querySelector(".button2");
 
         // hide our user interface that shows our A2HS button
         a2hsBtn.style.display = 'flex';
+        a2hsBtn2.style.display = 'flex';
 
         if (deferredPrompt) {
             // Show the prompt
