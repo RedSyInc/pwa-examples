@@ -26,15 +26,12 @@ window.addEventListener('beforeinstallprompt', function (e) {
 });
 
 function showAddToHomeScreen() {
-
     var a2hsBtn = document.querySelector(".button1");
 
-    a2hsBtn.style.display = "flex";
+    a2hsBtn.style.display = "block";
 
     a2hsBtn.addEventListener("click", addToHomeScreen);
     console.log('start3')
-
-
 }
 
 function addToHomeScreen() {
