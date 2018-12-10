@@ -1,3 +1,5 @@
+console.log('sw js sp');
+
 self.addEventListener('fetch', function(e) {
     console.log(e.request.url);
     e.respondWith(
