@@ -1,11 +1,8 @@
-'use strict';
-
-importScripts('sw-toolbox.js');
-
-toolbox.precache(["index.html","files/main.css"]);
-
-toolbox.router.get('/files/*', toolbox.cacheFirst);
-
-toolbox.router.get('/*', toolbox.networkFirst, {
-  networkTimeoutSeconds: 5
+self.addEventListener('fetch', function(e) {
+    console.log(e.request.url);
+    e.respondWith(
+        caches.match(e.request).then(function(response) {
+            return response || fetch(e.request);
+        })
+    );
 });

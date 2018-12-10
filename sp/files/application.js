@@ -15,7 +15,7 @@
     }
 
     var deferredPrompt;
-    console.log('asdasd1')
+    console.log('asdasd12')
 
 
     window.addEventListener('beforeinstallprompt', function (e) {
