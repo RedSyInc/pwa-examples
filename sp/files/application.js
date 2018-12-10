@@ -3,10 +3,12 @@
 (function () {
 
   var deferredPrompt;
+    console.log('asdasd1')
 
-  window.addEventListener('beforeinstallprompt', function (e) {
+
+    window.addEventListener('beforeinstallprompt', function (e) {
     // Prevent Chrome 67 and earlier from automatically showing the prompt
-      console.log('asdasd')
+      console.log('asdasd2')
     e.preventDefault();
     // Stash the event so it can be triggered later.
     deferredPrompt = e;
@@ -22,6 +24,8 @@ function showAddToHomeScreen() {
   a2hsBtn.style.display = "flex";
 
   a2hsBtn.addEventListener("click", addToHomeScreen);
+    console.log('asdasd3')
+
 
 }
 
