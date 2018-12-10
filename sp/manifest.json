@@ -3,7 +3,7 @@
   "short_name": "Вулкан",
   "description": "Играй в слоты и зарабатывай",
   "lang": "ru-RU",
-  "start_url": "/",
+  "start_url": "/pwa-examples/sp/",
   "display": "fullscreen",
   "theme_color": "#E6E6FA",
   "background_color": "#E6E6FA",
