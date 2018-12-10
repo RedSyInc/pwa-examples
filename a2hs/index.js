@@ -1,5 +1,5 @@
 // Register service worker to control making site work offline
-console.log('1234')
+console.log('12345')
 if('serviceWorker' in navigator) {
   navigator.serviceWorker
            .register('/pwa-examples/a2hs/sw.js')
